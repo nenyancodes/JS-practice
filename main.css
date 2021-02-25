@@ -1,0 +1,22 @@
+body {
+  background: rgb(214, 214, 214);
+}
+
+.cards {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  justify-items: center;
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+}
+
+.card img {
+  max-width: 250px;
+}
