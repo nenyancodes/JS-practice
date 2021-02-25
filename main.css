@@ -20,3 +20,31 @@ body {
 .card img {
   max-width: 250px;
 }
+
+.modal-outer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* Hide modal */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-outer.open {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.2s;
+}
+
+.modal-inner {
+  max-width: 800px;
+  min-height: 400px;
+  background: white;
+  padding: 30px;
+}
