@@ -1,3 +1,5 @@
+////// TASK 01: CLICK OUTSIDE MODAL
+
 const cardButtons = document.querySelectorAll("button");
 const modalOuter = document.querySelector(".modal-outer");
 const modalInner = document.querySelector(".modal-inner");
