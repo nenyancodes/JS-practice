@@ -1,6 +1,72 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
 body {
   background: rgb(214, 214, 214);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
 }
+
+.task {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* TASK 02 */
+
+.task-02 {
+  background-color: rgb(117, 75, 156);
+}
+
+.terms_wrapper {
+  width: 40%;
+  height: 60%;
+  min-width: 300px;
+  max-height: 90vh;
+  position: relative;
+  background-color: white;
+  padding: 40px;
+}
+
+.terms {
+  max-height: 90%;
+  overflow: scroll;
+}
+
+.terms p {
+  padding: 15px 0;
+}
+
+.accept-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  width: 200px;
+  height: 30px;
+  background-color: rgba(0, 173, 173, 0.692);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.accept-btn:active {
+  background-color: rgba(1, 107, 107, 0.692);
+}
+
+.accept-btn[disabled] {
+  opacity: 0.3;
+}
+
+/* TASK 01 */
 
 .cards {
   width: 70%;
