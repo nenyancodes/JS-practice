@@ -1,4 +1,4 @@
-const cardButtons = document.querySelectorAll(".card");
+const cardButtons = document.querySelectorAll("button");
 const modalOuter = document.querySelector(".modal-outer");
 const modalInner = document.querySelector(".modal-inner");
 
