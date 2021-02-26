@@ -1,3 +1,18 @@
+///// TASK 02: INTERSECTION OBSERVER
+
+const terms = document.querySelector(".terms");
+const acceptBtn = document.querySelector(".accept-btn");
+
+const enableAcceptButton = function (payload) {
+  if (payload[0].intersectionRatio > 0) {
+    acceptBtn.disabled = false;
+  }
+};
+
+const observer = new IntersectionObserver(enableAcceptButton);
+
+observer.observe(terms.lastElementChild);
+
 ////// TASK 01: CLICK OUTSIDE MODAL
 
 const cardButtons = document.querySelectorAll("button");
