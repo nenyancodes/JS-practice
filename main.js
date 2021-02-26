@@ -21,12 +21,19 @@ cardButtons.forEach((button) =>
   button.addEventListener("click", handleButtonClick)
 );
 
-  const docFragmLi = document.createRange().createContextualFragment(li)
-    .firstElementChild;
-  ul.appendChild(docFragmLi);
+/* Close Modal */
 
-  oddNumber = oddNumber + 2;
+const closeModal = function (event) {
+  modalOuter.classList.remove("open");
 };
 
-const btn = document.querySelector("button");
-btn.addEventListener("click", addLi);
+modalOuter.addEventListener("click", function (event) {
+  const isOutside = !event.target.closest(".modal-inner");
+  if (isOutside) {
+    closeModal();
+  }
+});
+
+window.addEventListener("keydown", (event) =>
+  event.key === "Escape" ? closeModal() : ""
+);
