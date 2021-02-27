@@ -4,12 +4,17 @@ const terms = document.querySelector(".terms");
 const acceptBtn = document.querySelector(".accept-btn");
 
 const enableAcceptButton = function (payload) {
-  if (payload[0].intersectionRatio > 0) {
+  console.log(payload);
+  console.log(payload[0].intersectionRatio);
+  if (payload[0].intersectionRatio >= 0.9) {
     acceptBtn.disabled = false;
   }
 };
 
-const observer = new IntersectionObserver(enableAcceptButton);
+const observer = new IntersectionObserver(enableAcceptButton, {
+  root: terms,
+  threshold: [0.5, 0.9],
+});
 
 observer.observe(terms.lastElementChild);
 
