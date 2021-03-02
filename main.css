@@ -19,6 +19,31 @@ body {
   align-items: center;
 }
 
+/* TASK 03 */
+
+.task-03 {
+  background-color: rgb(0, 209, 224);
+}
+
+.tabs {
+  width: 80%;
+  max-width: 800px;
+}
+
+.tab-button {
+  color: white;
+  background-color: rgb(79, 3, 102);
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.tab-panel {
+  background-color: white;
+  padding: 30px;
+  min-height: 150px;
+}
+
 /* TASK 02 */
 
 .task-02 {
